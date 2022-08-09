@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Desafio09082022
 {
@@ -9,51 +9,51 @@ namespace Desafio09082022
             Console.WriteLine("Digite o código de DDD para discagem interurbana:");
             int a = int.Parse(Console.ReadLine());
 
-            int resultado = DddInformado(a);
-           
+            Console.WriteLine(DddInformado(a));  
+            
         }
 
-        static int DddInformado(int a) {
+        static string DddInformado(int a)
+        {
 
             if (a == 61)
             {
-                Console.WriteLine("Brasilia");
+                return "Brasilia";
             }
             else if (a == 71)
             {
-                Console.WriteLine("Salvador");
+                return "Salvador";
             }
             else if (a == 11)
             {
-                Console.WriteLine("Sao Paulo");
+                return "Sao Paulo";
             }
             else if (a == 21)
             {
-                Console.WriteLine("Rio de Janeiro");
+                return "Rio de Janeiro";
             }
             else if (a == 32)
             {
-                Console.WriteLine("Juiz de Fora");
+                return "Juiz de Fora";
             }
             else if (a == 19)
             {
-                Console.WriteLine("Campinas");
+                return "Campinas";
             }
             else if (a == 27)
             {
-                Console.WriteLine("Vitoria");
+                return "Vitoria";
             }
             else if (a == 31)
             {
-                Console.WriteLine("Belo Horizonte");
+                return "Belo Horizonte";
             }
             else
             {
-                Console.WriteLine("DDD nao cadastrado");
+                return "DDD nao cadastrado";
             }
 
-            return a;
-
+          
         }
     }
 }
